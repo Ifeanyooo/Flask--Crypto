@@ -1,0 +1,4 @@
+			cur.execute("CREATE TABLE %s(%s)" %(self.table, create_data[:len(create_data)-1]))
+
+			cur.execute("INSER INTO %s%s VALUES(%s)" %(self.table, self.columns, data[:len(data)-1]))
+
